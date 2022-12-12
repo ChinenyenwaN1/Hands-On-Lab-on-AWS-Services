@@ -13,7 +13,7 @@ Go to <b>S3 </b> > select your bucket > Edit Public Acess Settings > unselect "B
 
 Create three files, <b>index.html</b>, <b>error.html</b>, <b>about.html</b><br>
 
-<a href="https://github.com/isaacarnault/aws-s3-static-website" target="_blank">Link</a>. <br>
+<a href="https://github.com/ChinenyenwaN1/Hands-On-Lab-on-AWS-Services/tree/Nenyebranch/S3%20code" target="_blank">Link</a>. <br>
 
 Upload the files in the S3 bucket
 
