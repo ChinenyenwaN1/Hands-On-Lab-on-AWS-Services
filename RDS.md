@@ -18,13 +18,11 @@ Administrator Access > Create group
 
 ![image](https://user-images.githubusercontent.com/116161693/206873635-2d03496f-1555-4de9-8c82-0a3d6770a704.png)
 
-Next : Tags
-
 Click create user
 
 ![image](https://user-images.githubusercontent.com/116161693/206873663-7251a129-8863-42ca-a31d-c880b39a85da.png)
 
-Download .csv (these credentials will be required later)
+**Download .csv and keep it secured- these credentials will be required later**
 
 we logged in as that user we created to get started to the next step.
 
@@ -34,22 +32,21 @@ Go to Services > click on EC2
 
 In "Create Instance" section, click on "Launch Instance"
 
-Select Amazon Linux 2 AMI (HVM), SSD Volume Type
+![image](https://user-images.githubusercontent.com/116161693/208132640-fddc1ac4-0c5c-4e18-a02c-63dcc5499d4d.png)
 
-Instance type: choose t2.micro (Free tier eligible). Instance comes with 1vCPU and 1 GiB (memory).
+choose the Instance type, Create New keypair and keep it secured, Configure Security Group
 
-### Next: Create New keypair and kept it secured ( we will be using it to connect to our instance)
-Configure Security Group
-We create a new security group > Security group name: WP-SG > Description : WordPress Server Security Group<br>
+![image](https://user-images.githubusercontent.com/116161693/208132916-ff1ccf61-66dc-4239-b7d8-89265690c71e.png)
 
-Make sure you Add Rule (add 3 new rules):
+add the below rules to your security group
 
-1. HTTP- This will enable access to `Port 80`
-2. SSH - This will enable access to `Port 22` using source 0.0.0.0/0
-3. HTTPS - This will enable access to `Port 443`
+HTTP- This will enable access to `Port 80`
+SSH - This will enable access to `Port 22` using source 0.0.0.0/0
+HTTPS - This will enable access to `Port 443`
  
-### We deployed one instance and provision the Advanced details section with the following script in the User data:
+in the Advanced details section add the following script in the User data:
 
+```
 #!/bin/bash
 yum install httpd php php-mysql -y
 cd /var/www/html
@@ -62,6 +59,7 @@ chmod -R 755 wp-content
 chown -R apache:apache wp-content
 service httpd start
 chkconfig httpd on
+```
 
 Others fields are left as default.
 
@@ -70,7 +68,7 @@ Others fields are left as default.
 
 Launch Instances > Click on Instance ID
   
-![image](https://user-images.githubusercontent.com/116161693/206874766-b9fc4c18-8210-475b-bf9a-994cbb0b0bf7.png)
+
 
 ## Step 3 : create a RDS instance
 
