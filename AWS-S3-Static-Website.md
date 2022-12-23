@@ -20,7 +20,7 @@ Upload the files in the S3 bucket
 ![image](https://user-images.githubusercontent.com/116161693/206856114-b295eb24-6300-4bea-9a89-006099e175d5.png)
 
 Files uploaded on S3 bucket
-![image](https://user-images.githubusercontent.com/116161693/206854348-c2f25a5f-cf31-4574-8ebb-dc3fd82aa3c4.png)
+![image](https://user-images.githubusercontent.com/116161693/209311369-1ec8ec70-2ce7-4962-b902-3f6f5af86413.png)
 
 Click on your bucket > select your 3 files > click on Actions > Make public<br>
 
@@ -30,9 +30,9 @@ Click on Properties > Static Website Properties > select "Use this bucket to hos
 
 ![image](https://user-images.githubusercontent.com/116161693/206855824-6dd4a989-f62d-4e56-b337-3e5efefe0d64.png)
 
-Click on Static Website Hosting to get the endpoint url.
+![image](https://user-images.githubusercontent.com/116161693/209311490-a62d71a0-7707-4668-ab12-bbc56b125fe3.png)
 
-![image](https://user-images.githubusercontent.com/116161693/206855917-4c0d6496-2f50-4de0-a7cc-c187ed5cded8.png)
+Click on Static Website Hosting to get the endpoint url.
 
 **Congratulations!** Our website is online, you can visit it using the provided endpoint url.
 ![image](https://user-images.githubusercontent.com/116161693/206854840-ca8dd045-2a74-475c-8eff-4908862d917e.png)
