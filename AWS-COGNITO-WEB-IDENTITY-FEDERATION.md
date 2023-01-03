@@ -1,12 +1,14 @@
 # Web Identity Federation
-In this advanced demo series you will be implementing a simple serverless application which uses Web Identity Federation.
+We will be implementing a simple serverless application which uses Web Identity Federation.
 The application runs using the following technologies
 
 *	S3 for front-end application hosting
 *	Google API Project as an ID Provider
 *	Cognito and IAM Roles to swap Google Token for AWS credentials
+
 The application runs from a browser, gets the user to login using a Google ID and then loads all images from a private S3 bucket into a browser using presignedURLs.
-This advanced demo consists of the below stages :-
+
+This project consists of the below stages :-
 *	Provision the environment and review tasks <= THIS STAGE
 *	Create Google API Project & Client ID
 *	Create Cognito Identity Pool
